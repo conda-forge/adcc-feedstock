@@ -10,7 +10,7 @@ source:
 
 build:
   number: 1
-  skip: true  # [win or py<37]
+  skip: true  # [win or py<37 or py>39]
 
 requirements:
   build:
@@ -37,7 +37,6 @@ test:
   requires:
     - pytest
     - pip
-    - cmake  # for pyscf build on py310
   imports:
     - adcc
   commands:
