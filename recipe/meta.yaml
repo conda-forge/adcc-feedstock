@@ -37,6 +37,7 @@ test:
   requires:
     - pytest
     - pip
+    - cmake  # for pyscf build on py310
   imports:
     - adcc
   commands:
