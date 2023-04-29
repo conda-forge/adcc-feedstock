@@ -21,6 +21,7 @@ requirements:
   host:
     - python
     - setuptools
+    - pip
     - libtensorlight >=3.0.1
     - pybind11 >=2.6
   run:
