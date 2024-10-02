@@ -41,9 +41,6 @@ test:
   requires:
     - pytest
     - pip
-    - {{ stdlib("c") }}      # [ppc64le]
-    - {{ compiler('c') }}    # [ppc64le]
-    - {{ compiler('cxx') }}  # [ppc64le]
   imports:
     - adcc
   commands:
