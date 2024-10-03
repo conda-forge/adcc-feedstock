@@ -48,6 +48,7 @@ test:
     - export PYLIB_EXT=`$PYTHON -c 'import sysconfig as s; print(s.get_config_var("EXT_SUFFIX"))'`
     - test -f $SP_DIR/libadcc$PYLIB_EXT
     - test -f $SP_DIR/adcc/AdcMethod.py
+    - pytest --pyargs adcc -v
 
 about:
   home: https://adc-connect.org
