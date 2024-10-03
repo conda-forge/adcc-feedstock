@@ -4,7 +4,7 @@ if [ $ver -eq 8 ]; then
     exit 0
 fi
 # install pyscf
-pip install pyscf
+#pip install pyscf
 python -c "import pyscf"
 # run adcc smoke tests
 pytest --pyargs adcc -v
