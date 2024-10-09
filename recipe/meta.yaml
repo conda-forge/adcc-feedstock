@@ -26,7 +26,8 @@ requirements:
     - python
     - setuptools
     - pip
-    - libtensorlight >=3.0.1 *_7
+    - libtensorlight >=3.0.1      # [not osx]
+    - libtensorlight >=3.0.1 *_5  # [osx]
     - pybind11 >=2.6
   run:
     - python
@@ -42,6 +43,7 @@ test:
     - pytest
     - pip
     - pyscf
+    - libtensorlight >=3.0.1 *_5  # [osx]
   imports:
     - adcc
   commands:
