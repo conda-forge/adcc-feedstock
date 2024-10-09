@@ -26,7 +26,7 @@ requirements:
     - python
     - setuptools
     - pip
-    - libtensorlight >=3.0.1
+    - libtensorlight >=3.0.1 *_7
     - pybind11 >=2.6
   run:
     - python
