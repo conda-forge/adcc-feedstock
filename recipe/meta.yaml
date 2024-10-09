@@ -49,6 +49,7 @@ test:
     - test -f $SP_DIR/libadcc$PYLIB_EXT
     - test -f $SP_DIR/adcc/AdcMethod.py
     - pytest --pyargs adcc -v
+    - pip check
 
 about:
   home: https://adc-connect.org
