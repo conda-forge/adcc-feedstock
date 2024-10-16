@@ -9,7 +9,7 @@ source:
   sha256: 041b2f25f980fe4fbadceffd301024455591643cdf5b42bced8d9f9d2f1e6b4a
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win or py<37]
 
 requirements:
@@ -17,6 +17,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
+    - {{ stdlib("c") }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - pkgconfig
@@ -40,12 +41,14 @@ test:
   requires:
     - pytest
     - pip
+    - pyscf
   imports:
     - adcc
   commands:
     - export PYLIB_EXT=`$PYTHON -c 'import sysconfig as s; print(s.get_config_var("EXT_SUFFIX"))'`
     - test -f $SP_DIR/libadcc$PYLIB_EXT
     - test -f $SP_DIR/adcc/AdcMethod.py
+    - pytest --pyargs adcc -v
 
 about:
   home: https://adc-connect.org
