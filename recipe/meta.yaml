@@ -36,6 +36,7 @@ requirements:
     - scipy >=1.2
     - tqdm >=4.30
     - opt_einsum >=3.0
+    - packaging >=24.0
 
 test:
   requires:
