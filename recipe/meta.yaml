@@ -9,7 +9,7 @@ source:
   sha256: d944425bf3e44d1bb6057f5aebbc77f81bdf9b08562544f98cc91204f9c05f87
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or ppc64le]
 
 requirements:
@@ -36,6 +36,7 @@ requirements:
     - scipy >=1.2
     - tqdm >=4.30
     - opt_einsum >=3.0
+    - packaging >=24.0
 
 test:
   requires:
