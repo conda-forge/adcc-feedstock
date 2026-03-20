@@ -9,7 +9,7 @@ source:
   sha256: d944425bf3e44d1bb6057f5aebbc77f81bdf9b08562544f98cc91204f9c05f87
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win or ppc64le]
 
 requirements:
@@ -42,7 +42,7 @@ test:
   requires:
     - pytest
     - pip
-    - pyscf
+    - pyscf                                  # [py < 314]
   imports:
     - adcc
   commands:
