@@ -42,6 +42,7 @@ test:
   requires:
     - pytest
     - pip
+    - pyscf                                  # [py < 314]
   imports:
     - adcc
   commands:
