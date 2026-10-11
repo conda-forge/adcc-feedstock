@@ -9,7 +9,7 @@ source:
   sha256: e23bfaf60923eaff405f36ed1533a1ce135f72b2021cf65cf1b49205757bc5c2
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or ppc64le]
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - wget
   host:
     - python
+    - libpython
     - setuptools
     - pip
     - libtensorlight >=3.0.1
