@@ -24,6 +24,7 @@ requirements:
     - wget
   host:
     - python
+    - libpython
     - setuptools
     - pip
     - libtensorlight >=3.0.1
